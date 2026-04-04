@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(147, 212, 234);
+  font-family: "Brush Script MT", cursive;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+p {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  color: green;
+}
+.box {
+  background-color: lightcoral;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  border: 2px dashed black;
+}
+.circle {
+  background-color: purple;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+  border: solid 3px lightseagreen;
+}
+
+span {
+  background-color: orange;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.div-span > * {
+  margin: 0 0 1rem;
+}
+
+span,
+.box,
+.circle {
+  transition: background-color 0.3s ease;
+  transition: transform 1.5s ease;
+}
+
+.box:hover,
+.circle:hover,
+span:hover {
+  background-color: lightblue;
+}
+.box:active,
+.circle:active,
+span:active {
+  background-color: lightgreen;
+  transform: rotate(180deg);
+}
